@@ -1,7 +1,14 @@
 .App {
   width: 100%;
+  position: relative;
   text-align: center;
-  background-color: #282c34;
+}
+
+.container {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  margin-top: 15px;
 }
 
 .App-logo {
