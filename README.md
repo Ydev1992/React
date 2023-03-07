@@ -1,62 +1,70 @@
-# Generate Git Commits
+# Getting Started with Create React App
 
-A command-line tool to generate your GitHub or GitLab activity graph.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Does your profile look like you have stopped coding at all? 
-No worries, this script will help you.
+## Available Scripts
 
-<img src="https://dl.dropboxusercontent.com/s/q2iinti6v0zbhzs/contributions.gif?dl=0" alt="How it works" />
+In the project directory, you can run:
 
-## How To Use
+### `npm start`
 
-1. Make sure you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and 
-   [Node.js](https://nodejs.org/en/download/) installed on your machine.
-3. Generate your commits:
-   ```shell script
-   npx fake-git-history
-   ```
-   It will create `my-history` folder, initialize git and generate commits for every day within the last year (0-3 commits per day).
-4. Create [a private repository](https://github.com/new) in your GitHub called `my-history`
-   and push the changes:
-   ```shell script 
-   cd my-history
-   git remote add origin https://github.com/Air128731/my-history.git
-   git push -u origin master
-   ```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Done! Go take a look at your GitHub profile 😉
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Customizations
+### `npm test`
 
-### `--commitsPerDay`
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Specify how many commits should be created for every single day.
-Default is `0,3` which means it will randomly make from 0 to 3 commits a day. Example:
+### `npm run build`
 
-```shell script
-npx fake-git-history --commitsPerDay "0,5"
-```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### `--workdaysOnly`
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Use it if you don't want to commit on weekends. Example:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```shell script
-npx fake-git-history --workdaysOnly
-```
+### `npm run eject`
 
-### `--startDate` and `--endDate`
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-By default, the script generates GitHub commits for every day within the last year.
-If you want to generate activity for a specific dates, then use these options:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-```shell script
-npx fake-git-history --startDate "2020/09/01" --endDate "2020/09/30"
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## PS 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-It is something I wrote as a joke, so don't take it seriously. I don't encourage you to cheat, 
-but if anybody is judging your professional skills by the graph at your GitHub profile, they deserve to see a rich activity graph 🤓
+## Learn More
 
-npm start --commitsPerDay "0,3" --workdaysOnly --startDate "2017/03/04" --endDate "2022/12/31"
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
